@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.container-info {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 7px solid rgb(23, 57, 92);
+}
+.title .title-h {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgb(23, 57, 92);
+}
+.title .title-icon {
+  font-size: 28px;
+  color: rgb(23, 57, 92);
+  font-weight: 900;
+}
+
+.btns {
+  display: flex;
+}
+.btns .btn-social {
+  margin-right: 20px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 9px;
+  background: #000;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+.btns .btn-social:hover {
+  background-color: #333333;
+}
+
+#header {
+  background-image: url(../images/header/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 40px;
+}
+#header .header_inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+#header .header_inner .sideBar {
+  order: -1;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+}
+#header .header_inner .sideBar .links {
+  list-style: none;
+  text-align: center;
+}
+#header .header_inner .sideBar .links .link {
+  color: rgb(23, 57, 92);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 20px 0;
+  border-top: 3px solid rgb(23, 57, 92);
+}
+#header .header_inner .sideBar .links .link:hover {
+  text-decoration: underline;
+}
+#header .header_inner .sideBar .btn-primary {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+#header .header_inner .sideBar .btn-primary .btn_primary {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 23px 45px;
+  background: rgb(255, 82, 68);
+  text-decoration: none;
+}
+#header .header_inner .sideBar .btn-primary .btn_primary:hover {
+  background-color: #ff6e63;
+}
+#header .header_inner .sideBar .logo {
+  display: flex;
+  justify-content: center;
+  padding: 17px 10px;
+}
+#header .time-info {
+  padding: 35px;
+  padding-bottom: 45px;
+  position: absolute;
+  bottom: -35px;
+  background: rgb(255, 255, 255);
+}
+#header .time-info .time-inner {
+  max-width: 550px;
+  margin: 0 auto;
+}
+#header .time-info .time-inner .title {
+  font-size: 22px;
+}
+#header .time-info .time-lines {
+  text-align: center;
+  margin-top: 30px;
+}
+#header .time-info .time-lines .time-line {
+  display: flex;
+  justify-content: space-between;
+}
+#header .time-info .time-lines .time-line .line {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 23px;
+}
+#header .time-info .time-text {
+  font-size: 400;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#timer {
+  margin-top: 35px;
+}
+
+#about {
+  margin-top: 35px;
+}
+
+.about-inner {
+  max-width: 610px;
+}
+.about-inner .about-text {
+  margin-top: 25px;
+}
+
+#price {
+  margin-top: 35px;
+}
+#price .price-inner {
+  max-width: 610px;
+}
+#price .price-inner .prices {
+  margin-top: 30px;
+}
+#price .price-inner .prices img {
+  max-width: 300px;
+}
+
+#rules {
+  margin-top: 35px;
+}
+#rules .rules-inner {
+  max-width: 610px;
+}
+#rules .rules-inner .rules-text {
+  margin-top: 20px;
+  line-height: 1.3em;
+}
+#rules .rules-inner .practice {
+  margin-top: 60px;
+  padding: 15px;
+  text-align: center;
+  border: 22px solid rgb(255, 82, 68);
+  color: rgb(23, 57, 92);
+}
+
+#aboutUs {
+  margin-top: 35px;
+}
+#aboutUs .aboutUs-inner {
+  max-width: 610px;
+}
+#aboutUs .aboutUs-inner .items {
+  margin-top: 35px;
+}
+#aboutUs .aboutUs-inner .items .item {
+  max-width: 280px;
+  margin: 0 auto;
+}
+#aboutUs .aboutUs-inner .items .item .name {
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#aboutUs .aboutUs-inner .owl-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#aboutUs .aboutUs-inner .owl-nav a {
+  padding: 12px 20px;
+  background-color: rgb(23, 57, 92);
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+#aboutUs .aboutUs-inner .owl-nav a:hover {
+  background-color: #1f4d7d;
+}
+
+#sponsors {
+  margin-top: 35px;
+}
+#sponsors .sponsors-inner {
+  max-width: 610px;
+  width: 100%;
+}
+#sponsors .sponsors-inner .icons {
+  display: flex;
+  margin-top: 30px;
+}
+#sponsors .sponsors-inner .icons .icon {
+  margin-right: 25px;
+}
+
+#contacts {
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+#contacts .contacts-inner {
+  max-width: 610px;
+  width: 100%;
+}
+#contacts .contacts-inner .contacts-info {
+  margin-top: 25px;
+  font-weight: 400;
+}
+#contacts .contacts-inner .contacts-info .adress {
+  margin-bottom: 10px;
+}
+#contacts .contacts-inner .contacts-info .email, #contacts .contacts-inner .contacts-info .tel {
+  margin-bottom: 6px;
+}
+#contacts .contacts-inner .contacts-info .info {
+  margin-bottom: 7px;
+}
+#contacts .contacts-inner .contacts-info a {
+  color: #000;
+  text-decoration: none;
+}
+#contacts .contacts-inner .contacts-info a:hover {
+  text-decoration: underline;
+}
+#contacts .contacts-inner .btns {
+  margin-top: 40px;
+}
+
+@media (max-width: 1120px) {
+  .container {
+    max-width: 960px;
+  }
+  .container-info {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 740px;
+  }
+  .container-info {
+    max-width: 740px;
+  }
+  .time-info {
+    width: 450px;
+    height: 400px;
+    top: 380px;
+  }
+}
+@media (max-width: 678px) {
+  .container {
+    width: 540px;
+  }
+  .container-info {
+    max-width: 540px;
+  }
+}
+@media (max-width: 340px) {
+  .container {
+    width: 540px;
+  }
+  .container-info {
+    max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 450px;
+  }
+  .container-info {
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUs-inner {
+    max-width: 300px;
+  }
+  .item {
+    margin: 0 auto;
+  }
+  .time-info {
+    width: 350px;
+    height: 400px;
+    top: 380px;
+  }
+  #header .btns {
+    display: none;
+  }
+  #aboutUs {
+    width: 450px;
+  }
+  .time-info {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+@mixin btnSocial  {
+    margin-right: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 9px;
+    background: $btnSocial;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+@mixin link($color){
+    color: $color;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 0 ;
+    border-top: 3px solid $color;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+@mixin title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 7px solid $GAR-blue;
+    .title-h{
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $GAR-blue;
+    }
+    .title-icon{
+        font-size: 28px;
+        color: $GAR-blue;
+        font-weight: 900;
+    }
+}
