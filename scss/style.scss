@@ -18,6 +18,10 @@ body{
     font-size: 18px;
 }
 
+.patternBlock{
+    display: none;
+}
+
 .container-info{
     max-width: 1200px;
     width: 100%;
@@ -29,7 +33,27 @@ body{
 
 .title{
     @include title;
-  }
+}
+
+.owl-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    a{
+        padding: 12px 20px;
+        cursor: pointer;
+        background-color: $GAR-blue;
+        color: #fff;
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 700;
+        &:hover{
+            background-color: lighten($color: $GAR-blue, $amount: 8);
+        }
+    }
+
+}
 
   .btns {
     display: flex;
@@ -49,10 +73,24 @@ body{
     background-position: center;
     padding-bottom: 40px;
 
+
     .header_inner{
         display: flex;
         justify-content: space-between;
         padding-top: 50px;
+
+        .head-wrap{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            .photo-back{
+                margin-top: 35px;
+                img{
+                    max-width: 370px;
+                }
+            }
+        }
 
         .sideBar{
             order: -1;
@@ -93,6 +131,7 @@ body{
         }
 
     }
+
     .time-info{
         padding: 35px;
         padding-bottom: 45px;
@@ -107,7 +146,6 @@ body{
             .title{
                 font-size: 22px;
             }
-
         }
 
         .time-lines{
@@ -136,9 +174,62 @@ body{
 }
 
 // timer
-
 #timer{
+    display: none;
     margin-top: 35px;
+    .time-lines{
+        margin-top: 30px;
+        text-align: center;
+    }
+    .time-line{
+        display: flex;
+        justify-content: space-between;
+
+        .line{
+            color: rgba(0, 0, 0, 1);
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+    .time-text{
+        font-size: 400;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .links-wrap{
+        margin-top: 25px;
+    }
+
+      .links{
+                list-style: none;
+                text-align: center;
+
+                .link{
+                 @include link($GAR-blue);
+                 font-weight: 800;
+                 font-size: 22px;
+                }
+            }
+
+            .btn-primary{
+                margin: 15px 0;
+                display: flex;
+                justify-content: center;
+
+                .btn_primary{
+                    color: #fff;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding: 35px 75px;
+                    background: $GAR-red;
+                    text-decoration: none;
+                    &:hover{
+                        background-color: lighten($color: $GAR-red, $amount: 6);
+                    }
+                }
+         }
 }
 
 
@@ -153,34 +244,58 @@ body{
         margin-top: 25px;
 
     }
-
 }
 
 //price
-
 #price{
     margin-top: 35px;
-
     .price-inner{
         max-width: 610px;
-
-        .prices{
+        width: 100%;
+        .wrap-owl{
+            width: 100%;
+            display: none;
+            flex-direction: column;
+            align-items: center;
             margin-top: 30px;
-
-            img{
+            .owl-carousel{
                 max-width: 300px;
-            }
+
+                img{
+                    width: 100%;
+                }
+               }
         }
     }
+
+    .prices{
+        margin-top: 35px;
+        width: 100%;
+        display: flex;
+    }
+
 }
 
 //rules
-
 #rules{
     margin-top: 35px;
 
     .rules-inner{
         max-width: 610px;
+        .rules-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .patternBlock{
+            margin-top: 20px;
+            max-width: 300px;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
 
         .rules-text{
             margin-top: 20px;
@@ -197,14 +312,19 @@ body{
 }
 
 //aboutUs
-
 #aboutUs{
     margin-top: 35px;
 
     .aboutUs-inner{
         max-width: 610px;
+        width: 100%;
 
-        .items{
+        .owl-nav{
+            a{
+                background-color: $GAR-red;
+            }
+        }
+        .carousel-about{
             margin-top: 35px;
 
             .item{
@@ -218,29 +338,10 @@ body{
                 }
             }
         }
-        .owl-nav{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            a{
-                padding: 12px 20px;
-                background-color: $GAR-blue;
-                color: #fff;
-                text-decoration: none;
-                font-size: 25px;
-                font-weight: 700;
-                &:hover{
-                    background-color: lighten($color: $GAR-blue, $amount: 8);
-                }
-            }
-
-        }
     }
 }
 
 //sponsors
-
 #sponsors{
     margin-top: 35px;
 
@@ -297,4 +398,4 @@ body{
     }
 }
 
-@import 'media'
+@import 'media';

@@ -1,18 +1,27 @@
 $(document).ready(function(){
-    let owl = $(".owl-carousel");
-    owl.owlCarousel({
-        items: 2,
-        margin: 20,
-        responsive:{
-            540:{
-                items: 1,
-                nav:true
-            }
-        }
-    });
-    $('.next').click(() => owl.trigger('next.owl.carousel'))
-
-    $('.prev').click(() => owl.trigger('prev.owl.carousel'))
-
+  $(".carousel-price").owlCarousel({
+    center: true,
+    items:1
   });
+  $(".carousel-about").owlCarousel({
+    items:2,
+    margin: 10,
+    responsiveClass:true,
+    responsive:{
+      0:{
+          items:1,
+      },
+      600:{
+          items:2,
+      }
+  }
+  });
+  $('.next').click(() => $(".carousel-about").trigger('next.owl.carousel'))
+
+  $('.prev').click(() => $(".carousel-about").trigger('prev.owl.carousel'))
+
+  $('.next').click(() => $(".carousel-price").trigger('next.owl.carousel'))
+
+  $('.prev').click(() => $(".carousel-price").trigger('prev.owl.carousel'))
+});
 

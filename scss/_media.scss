@@ -39,7 +39,7 @@ $breakpoints:(
     }
 }
 
-@media(max-width: map-get($breakpoints, 'xs')){
+@media (max-width: map-get($breakpoints, 'xs')){
     .container{
         width: 540px;
     }
@@ -52,32 +52,72 @@ $breakpoints:(
     .container{
         max-width: 450px;
     }
+
     .container-info{
-        max-width: 450px;
-        display: flex;
-        justify-content: center;
+        width: 450px;
+        margin: 0 auto;
+        padding: 0 20px;
 
     }
+
+    .patternBlock{
+        display: block;
+    }
+
     .aboutUs-inner{
         max-width: 300px;
     }
-    .item{
-        margin: 0 auto;
-    }
+
     .time-info{
         width: 350px;
         height: 400px;
         top: 380px;
     }
+
     #header .btns{
         display: none;
     }
+
     #aboutUs{
         width: 450px;
     }
+
     .time-info{
         display: none;
     }
 
+    #sponsors{
+        display: none;
+    }
 
+    .practice{
+        display: none;
+    }
+
+    #timer{
+        display: block;
+    }
+
+    #header{
+        background: none;
+        .header_inner{
+            .head-wrap{
+                display: flex;
+            }
+        }
+        .sideBar{
+            display: none;
+        }
+    }
+
+    #price{
+        .prices{
+            display: none;
+        }
+        .price-inner{
+            .wrap-owl{
+                display: flex;
+            }
+        }
+    }
 }
